@@ -9,9 +9,9 @@ const Dropdown = ({ onDelete, position }) => {
   return (
     <div className="dropdown" style={style}>
       <ul className="dropdown-menu">
-        <li onClick={onDelete}>Delete</li>
-        <li>Option 2</li>
-        <li>Option 3</li>
+        <li onClick={onDelete}>Delete note</li>
+        <li>Lock note</li>
+        <li>Make a copy</li>
       </ul>
     </div>
   );

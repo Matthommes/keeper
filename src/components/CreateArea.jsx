@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
+
 function CreateArea({ onAdd }) {
   const [note, setNote] = useState({
     title: "",
@@ -17,7 +18,7 @@ function CreateArea({ onAdd }) {
       };
     });
   }
-
+  
   function submitNote(event) {
     onAdd(note);
     setNote({

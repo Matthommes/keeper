@@ -15,8 +15,9 @@ const Note = ({ note, onDelete }) => {
 
   function toggleDropdown() {
     setIsDropdownVisible(!isDropdownVisible);
-    console.log("Clicked");
   }
+
+
 
   return (
     <>
@@ -26,8 +27,8 @@ const Note = ({ note, onDelete }) => {
         <button onClick={toggleDropdown}>
           <FontAwesomeIcon icon={faEllipsisV} />
         </button>
+        {isDropdownVisible && <Dropdown onDelete={handleDelete} />}
       </div>
-      {isDropdownVisible && <Dropdown onDelete={handleDelete} />}
     </>
   );
 };
